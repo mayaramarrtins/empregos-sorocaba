@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parceria Social de Empregos</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    
+    <header class="header">
+        <div class="container">
+            <div class="header-logo">
+                
+                <a href="index.html" class="header-logo-main">
+                    <img src="imagens/parceria_social_de_empregos_logo.jpg" alt="Logo da empresa" class="logo">
+                </a>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    
+    <main class="main">
+        <section class="hero-section">
+            <div class="hero-overlay"></div>
+            <div class="container hero-content">
+                <br><br>
+                <h1>Conectando Talentos em <br> Sorocaba e Região</h1>
+                <p>Encontre as melhores oportunidades de emprego ou divulgue vagas da sua empresa. Juntos, fortalecemos o mercado de trabalho local.</p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <i class="fas fa-briefcase"></i>
+                        <span>200+ vagas ativas</span>
+                    </div>
+            
+                    <div class="stat-item">
+                        <i class="fas fa-city"></i>
+                        <span>10 cidades atendidas</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        
+        <div class="container search-section-wrapper">
+            <section class="search-section">
+                <br>
+               <br>
+               <br>
+                
+                <div class="search-box">
+                    <div class="search-filters">
+                        <div class="search-input-group">
+                            <i class="fas fa-search search-icon"></i>
+                            <input type="text" id="search-input" placeholder="Cargo, palavra-chave ou empresa">
+                        </div>
+                        <div class="filter-select-group">
+                            <i class="fas fa-tag filter-icon"></i>
+                            <select id="area-filter">
+                                <option value="">Área de atuação</option>
+                            </select>
+                        </div>
+                        <div class="filter-select-group">
+                            <i class="fas fa-map-marker-alt filter-icon"></i>
+                            <select id="location-filter">
+                                <option value="">Localização</option>
+                            </select>
+                        </div>
+                    </div>
+                    <button id="search-button" class="search-button">
+                        <i class="fas fa-search search-icon"></i>
+                        Buscar vagas
+                    </button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+
+    <section class="container job-section">
+        <div class="section-header">
+            <div>
+                <h2>Vagas em Destaque</h2>
+                <p class="section-header-sub">Oportunidades recentemente cadastradas</p>
+            </div>
+            <span id="job-count" class="job-count">3 vagas disponíveis</span>
+        </div>
+
+        <div class="job-list" id="job-list">
+        
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Site desenvolvido por Mayara Martins. &copy; </p>
+        </div>
+    </footer>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
